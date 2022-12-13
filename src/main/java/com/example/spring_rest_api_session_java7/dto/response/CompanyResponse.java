@@ -5,16 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Set;
-
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginResponse {
+public class CompanyResponse {
 
-    private String jwtToken;
-    private String message;
-    private Set<String> authorities;
+    private Long id;
+
+    private String companyName;
+
+    private String locatedCountry;
+
+    private int student;
 }

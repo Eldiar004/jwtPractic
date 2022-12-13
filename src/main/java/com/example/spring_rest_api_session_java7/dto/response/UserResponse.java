@@ -5,16 +5,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Set;
-
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginResponse {
+public class UserResponse {
 
-    private String jwtToken;
-    private String message;
-    private Set<String> authorities;
+    private String id;
+    private String email;
+    private String firstName;
 }

@@ -1,8 +1,7 @@
 package com.example.spring_rest_api_session_java7.security.config;
 
 import com.example.spring_rest_api_session_java7.security.jwt.JwtFilter;
-import com.example.spring_rest_api_session_java7.service.impl.UserService;
-import lombok.RequiredArgsConstructor;
+import com.example.spring_rest_api_session_java7.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,9 +14,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-/**
- * author: Ulansky
- */
+
 @EnableWebSecurity
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -33,7 +30,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         this.jwtFilter = jwtFilter;
 
     }
-
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {

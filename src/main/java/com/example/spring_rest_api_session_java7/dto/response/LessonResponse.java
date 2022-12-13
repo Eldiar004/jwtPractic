@@ -1,20 +1,20 @@
 package com.example.spring_rest_api_session_java7.dto.response;
 
+import com.example.spring_rest_api_session_java7.entity.Course;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Set;
-
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginResponse {
+public class LessonResponse {
 
-    private String jwtToken;
-    private String message;
-    private Set<String> authorities;
+    private Long id;
+
+    private String lessonName;
+
+    private Course course;
 }
